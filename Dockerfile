@@ -22,10 +22,10 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys \
 ENV TOMCAT_VERSION 8.0.33
 ENV TOMCAT_TGZ_URL https://www.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
 
-ADD settings.xml /tmp \
-    && mv /tmp/settings.xml /usr/share/maven/conf/settings.xml
+ADD settings.xml /home
 
 RUN set -x \
+    && mv /home/settings.xml /usr/share/maven/conf/settings.xml \
     && curl -fSL "$TOMCAT_TGZ_URL" -o tomcat.tar.gz \
     && curl -fSL "$TOMCAT_TGZ_URL.asc" -o tomcat.tar.gz.asc \
     && gpg --verify tomcat.tar.gz.asc \
