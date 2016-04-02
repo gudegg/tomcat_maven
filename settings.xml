@@ -150,6 +150,7 @@
 			when you only have a list of profile id's for debug. | | This profile example 
 			uses the JDK version to trigger activation, and provides a JDK-specific repo. 
 -->
+<!--
 <profile>
 <id>jdk-1.4</id>
 <activation>
@@ -182,6 +183,7 @@
 </pluginRepository>
 </pluginRepositories>
 </profile>
+-->
 <!--
  | Here is another profile, activated by the system property 'target-env' 
 			with a value of 'dev', | which provides a specific path to the Tomcat instance. 
