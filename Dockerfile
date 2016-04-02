@@ -1,6 +1,6 @@
 FROM maven:3.3.3
 
-ADD settings.xml /home
+ADD settings.xml /home/
 
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
