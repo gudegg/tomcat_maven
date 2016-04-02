@@ -30,7 +30,6 @@
 		store artifacts. | | Default: ${user.home}/.m2/repository 
 	
 -->
-<localRepository>F:/Maven/repo/m2/</localRepository>
 <!--
  interactiveMode | This will determine whether maven prompts you when 
 		it needs input. If set to false, | maven will use a sensible default value, 
@@ -114,7 +113,7 @@
 <id>nexus-osc</id>
 <mirrorOf>*</mirrorOf>
 <name>Nexus osc</name>
-<url>http://maven.oschina.net/content/groups/public/</url>
+<url>https://oss.sonatype.org/content/groups/public/</url>
 </mirror>
 </mirrors>
 <!--
@@ -160,7 +159,7 @@
 <repository>
 <id>nexus</id>
 <name>local private nexus</name>
-<url>http://maven.oschina.net/content/groups/public/</url>
+<url>https://oss.sonatype.org/content/groups/public/</url>
 <releases>
 <enabled>true</enabled>
 </releases>
@@ -173,7 +172,7 @@
 <pluginRepository>
 <id>nexus</id>
 <name>local private nexus</name>
-<url>http://maven.oschina.net/content/groups/public/</url>
+<url>https://oss.sonatype.org/content/groups/public/</url>
 <releases>
 <enabled>true</enabled>
 </releases>
