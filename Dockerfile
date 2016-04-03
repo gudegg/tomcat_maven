@@ -1,5 +1,5 @@
 FROM maven:3.3.3
-
+MAINTAINER Guodong
 ADD settings.xml /home/
 
 ENV CATALINA_HOME /usr/local/tomcat
