@@ -1,2 +1,2 @@
 #### a tomcat_maven dockerfile
-> change maven Mirror to http://uk.maven.org/maven2/
+> change maven mirror to http://uk.maven.org/maven2/
